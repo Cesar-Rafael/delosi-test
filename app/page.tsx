@@ -106,6 +106,7 @@ export default function Home() {
             matrix={matrix}
             handleMatrixChange={handleMatrixChange}
             title='Matriz original'
+            tootipText='Presione TAB y ENTER para navegar fácilmente entre las celdas'
           />
           <Button
             onClick={rotateMatrix}

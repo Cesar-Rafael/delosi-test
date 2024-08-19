@@ -3,12 +3,13 @@ import './tooltip.css';
 
 interface ITooltipProps {
   text: string;
+  color?: string;
 }
 
-const Tooltip = ({ text }: ITooltipProps) => {
+const Tooltip = ({ text, color }: ITooltipProps) => {
   return (
     <div className='tooltip'>
-      <IconInfoCircle />
+      <IconInfoCircle color={color} />
       <span className='tooltiptext'>{text}</span>
     </div>
   );
